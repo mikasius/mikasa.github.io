@@ -1,9 +1,66 @@
+<!-- BEGIN (write your solution here) -->
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+
+<!-- 
+В параграфе — две ссылки:
+Внутри #main короткий вводный текст (опционально) и несколько секций: "Опыт работы", "Образование", "Другие навыки и увлечения". 
+Каждая секция начинается с заголовка второго уровня, и содержит несколько пунктов. В каждом пункте — список. См. пример на скриншоте.
+Внутри #footer — имя, адрес, телефон и email. -->
+
+
 <head>
-	<title>Testing guthub pages</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="style.css">
+
+	<title>Резюме - Сергей Метленкин</title>
 </head>
+
 <body>
-<h1>Hi there!</h1>
+	<div id='header'>
+		<h1>Sergey Metlenkin</h1>
+		<h3 class='hide'>Junior developer</h3>
+		<p class='hide'>
+			<a href="mailto:s.metlenkin@gmail.com">s.metlenkin@gmail.com</a>
+			<a href="https://vk.com/mikasius">Сергей Метленкин</a>
+		</p>
+	</div>
+  
+  
+	<div class='hide' id='main'>
+		<p>Привет, меня зовут Сергей, я fullstack-разработчик. :)</p>
+		<h2>Опыт работы</h2>
+		<h3>MCC-Tomsk</h3>
+		<p>Программист fullstack. <i>Апрель 2019 &mdash; ...</i></p>
+			<ul>
+				<li>React</li>
+				<li>React-Native</li>
+				<li>C#</li>
+			</ul>
+
+		<h2>Образование</h2>
+		<h3>ТГУ, ФФК</h3>
+        <p>Магистр, <i>Сентябрь 2017 &mdash; Июнь 2019</i></p>
+
+		<h2>Другие навыки и увлечения</h2>
+			<ul>
+				<li>Taijiquan</li>
+				<li>Yoga</li>
+				<li>Basketball</li>
+			</ul>
+
+	</div>
+	<div class='hide' id='footer'>
+		<b>Сергей Метленкин</b>
+		<p>г. Томск, ул. Елизаровых, 48/9, +79138131520,
+			<a href="mailto:s.metlenkin@gmail.com">s.metlenkin@gmail.com</a>
+		</p>
+	</div>
+
 </body>
+
 </html>
+<!-- END -->
