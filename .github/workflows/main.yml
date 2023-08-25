@@ -1,5 +1,5 @@
 name: Build slides
-run-name: Try to build and push slides
+run-name: Build and publish slides
 on: [push]
 jobs:
   build-slides:
