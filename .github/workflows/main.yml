@@ -1,5 +1,5 @@
 - name: Build slides
-  uses: docker://marpteam/marp-cli:latest
+  uses: docker://marpteam/marp-cli
   with:
     args: slides.md -o ./index.html
   env:
