@@ -1,0 +1,22 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "RTL slides",
+  "main": "index.js",
+  "scripts": {
+    "test": "marp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikasius.github.io/slides.git"
+  },
+  "author": "Sergey <mikasius>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikasius.github.io/slides/issues"
+  },
+  "homepage": "https://github.com/mikasius.github.io/slides#readme",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.2.1"
+  }
+}
