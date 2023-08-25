@@ -1,5 +1,5 @@
 name: Build slides
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: Try to build and push slides
 on: [push]
 jobs:
   build-slides:
@@ -10,3 +10,7 @@ jobs:
         with:
           node-version: '18'
       - run: npx @marp-team/marp-cli@latest ./slides/slides.md -o ./slides/index.html
+      - run: |
+          git add .
+          git commit -m "Updated slides"
+          git push
