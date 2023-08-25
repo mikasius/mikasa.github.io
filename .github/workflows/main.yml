@@ -11,8 +11,8 @@ jobs:
           node-version: '18'
       - run: npx @marp-team/marp-cli@latest ./slides/slides.md -o ./slides/index.html
       - run: |
-          git config --edit --local user.name GHWF
-          git config --edit --local user.email s.metlenkin@gmail.com
+          git config --add user.name GHWF
+          git config --add user.email s.metlenkin@gmail.com
           git add .
           git commit -m "Updated slides"
           git push
