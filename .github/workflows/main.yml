@@ -9,4 +9,4 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - run: npx @marp-team/marp-cli@latest slides.md -o ./slides/index.html
+      - run: npx @marp-team/marp-cli@latest ./slides/slides.md -o ./slides/index.html
