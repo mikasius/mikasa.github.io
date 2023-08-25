@@ -9,6 +9,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
+      - run: |
+          echo "<!-- ${{ github.run.id }} -->" >> ./slides/slides.md  
       - run: npx @marp-team/marp-cli@latest ./slides/slides.md -o ./docs/index.html
       - run: |
           git config --add user.name GHWF
