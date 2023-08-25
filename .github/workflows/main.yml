@@ -1,7 +1,12 @@
 name: Build slides
-uses: docker://marpteam/marp-cli
+run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
-with:
-  args: slides.md -o ./index.html
-env:
-  MARP_USER: root:root
+jobs:
+  build-slides:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npx @marp-team/marp-cli@latest slides.md -o ./slides/index.html
