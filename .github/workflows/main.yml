@@ -1,5 +1,6 @@
 name: Build slides
 uses: docker://marpteam/marp-cli
+on: [push]
 with:
   args: slides.md -o ./index.html
 env:
